@@ -7,13 +7,13 @@ class List extends React.Component {
       value: ""
     };
 
-    this.handleChange = this.handleChange.bind(this);
+    //this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({ value: event.target.value });
-  }
+  // handleChange(event) {
+  //   this.setState({ value: event.target.value });
+  // }
 
   handleSubmit(event) {
     this.setState({
@@ -36,7 +36,7 @@ class List extends React.Component {
               type="text"
               placeholder={this.props.placeholder}
               value={this.state.value}
-              onChange={this.handleChange}
+             // onChange={this.handleChange}
             />
           </label>
           <input className="btn btn-sm" type="submit" value="Submit" />
