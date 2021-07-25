@@ -1,6 +1,6 @@
 import React from "react";
 // import List from "./List";
-import List from "./ListFunc"
+import List from "./ListFuncWithHooks"
 import Table from "./Table";
 /*Add import statement here*/
 

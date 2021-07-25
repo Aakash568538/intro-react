@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import InputText from './InputText';
 
 export const ListFunc = (props) => {
  const [value, setValue] = useState('aaa')
@@ -18,7 +19,7 @@ export const ListFunc = (props) => {
         {/*Replace the code below to call the title prop*/}
         <p className="h2">REPLACE THIS TITLE WITH A PROP</p>
         <form onSubmit={handleSubmit}>
-          <label>
+          {/* <label>
             <input
               className="form-control input-sm"
               type="text"
@@ -26,7 +27,12 @@ export const ListFunc = (props) => {
               value={value}
               onChange={handleChange}
             />
-          </label>
+          </label> */}
+          <InputText
+            placeholder={props.placeholder}
+            value={value}
+            handleChange={handleChange}
+          />
           <input className="btn btn-sm" type="submit" value="Submit" />
         </form>
         <ul className="Box">
