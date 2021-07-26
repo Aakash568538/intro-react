@@ -1,7 +1,8 @@
 import React from "react";
-// import List from "./List";
-import List from "./ListFuncWithHooks"
+import List from "./List";
+// import List from "./ListFuncWithHooks"
 import Table from "./Table";
+import Greeting from "./ProptypesExample";
 /*Add import statement here*/
 
 class App extends React.Component {
@@ -19,6 +20,18 @@ class App extends React.Component {
     /*Uncomment the line below to bind the method*/
     /*this.addStudent = this.addStudent.bind(this);*/
     this.addGrade = this.addGrade.bind(this);
+  }
+
+  componentDidMount() {
+    console.log("componentDidMount")
+  }
+
+  componentDidUpdate() {
+    console.log("componentDidUpdate")
+  }
+
+  componentWillUnmount() {
+    console.log("componentWillUnmount")
   }
 
   handleButtonClicked(buttonName) {
@@ -48,6 +61,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.log('render')
     let tabChoice = <div />;
 
     /*Uncomment below to render assignments*/
@@ -91,6 +105,7 @@ class App extends React.Component {
       <div>
         <div className="Box Box--spacious f4">
           <div className="Box-header">
+          <Greeting name='Students'/>
             {/* Replace this line with the proper header code*/}
           </div>
         </div>
