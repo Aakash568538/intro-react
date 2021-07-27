@@ -12,7 +12,8 @@ class App extends React.Component {
     this.state = {
       buttonClicked: "",
       assignments: [] /*Below this line, add the students state variable*/,
-      grades: {}
+      grades: {},
+      show: true
     };
 
     this.handleButtonClicked = this.handleButtonClicked.bind(this);
@@ -105,10 +106,12 @@ class App extends React.Component {
       <div>
         <div className="Box Box--spacious f4">
           <div className="Box-header">
-          <Greeting name='Students'/>
-            {/* Replace this line with the proper header code*/}
+          {
+            this.state.show && <Greeting name='NewStudents'/>
+          }
           </div>
-        </div>
+          <button onClick={() => {this.setState({show: !this.state.show})}}>Click me to toggle</button> 
+          </div>
         <nav className="UnderlineNav d-flex flex-justify-center">
           <div className="UnderlineNav-body pt-6">
             <button
