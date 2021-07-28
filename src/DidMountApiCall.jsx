@@ -19,7 +19,6 @@ class DidMountApiCall extends React.Component {
         (response) => response.json()
     ).then(data => this.setState({users: data}))  }
 
-
   render() {
     return (
         <div >

@@ -15,7 +15,7 @@ class App extends React.Component {
       grades: {},
       show: true
     };
-
+      // console.log("🚀 ~ file: App.jsx ~ line 18 ~ App ~ constructor ~ show")
     this.handleButtonClicked = this.handleButtonClicked.bind(this);
     this.addAssignment = this.addAssignment.bind(this);
     /*Uncomment the line below to bind the method*/
@@ -105,13 +105,13 @@ class App extends React.Component {
     return (
       <div>
         <div className="Box Box--spacious f4">
-          {/* <div className="Box-header">
+          <div className="Box-header">
           {
-            this.state.show && <Greeting name='NewStudents'/>
+            this.state.show && <Greeting name='Newstudents'/>
           }
-          </div> */}
-          {/* <button onClick={() => {this.setState({show: !this.state.show})}}>Click me to toggle</button>  */}
-          <Greeting name='NewStudents'/>
+          </div>
+          <button onClick={() => {this.setState({show: !this.state.show})}}>Click me to toggle</button> 
+          {/* <Greeting name='NewSasdatudents'/> */}
           </div>
         <nav className="UnderlineNav d-flex flex-justify-center">
           <div className="UnderlineNav-body pt-6">

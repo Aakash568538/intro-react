@@ -3,9 +3,10 @@ import React from 'react';
 
 class Greeting extends React.Component {
   constructor(props){
+    console.log("🚀 ~ file: ProptypesExample.jsx ~ line 6 ~ Greeting ~ constructor ~ constructor")
     super(props)
     this.state = {
-      name: ''
+      age: ''
     }
   }
 

@@ -7,9 +7,9 @@ import NameForm from './UncontrolledComp';
 import Greeting from './ProptypesExample';
 import DidMountApiCall from './DidMountApiCall';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<Greeting />, document.getElementById('root'));
-// ReactDOM.render(<NameForm />, document.getElementById('root'));
+ReactDOM.render(<NameForm />, document.getElementById('root'));
 // ReactDOM.render(<DidMountApiCall />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
