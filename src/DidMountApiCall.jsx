@@ -20,11 +20,12 @@ class DidMountApiCall extends React.Component {
     ).then(data => this.setState({users: data}))  }
 
   render() {
+    const theadStyle = {textAlign: 'left'}
     return (
         <div >
         <p>This will display all of the users from Api call</p>
         <table style={{width: '50%'}}>
-        <thead style={{textAlign: 'left'}}>
+        <thead style={theadStyle}>
             <tr>
                 <th>Id</th>
                 <th>Name</th>

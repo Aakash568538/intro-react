@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import InputText from './InputText';
 
 export const ListFunc = (props) => {
- const [value, setValue] = useState('aaa')
+ const [value, setValue] = React.useState('aaa')
  
  const handleChange = (event) => {
     setValue(event.target.value);
@@ -17,17 +17,18 @@ export const ListFunc = (props) => {
     return (
         <div className="col-6 mx-auto">
         {/*Replace the code below to call the title prop*/}
-        <p className="h2">REPLACE THIS TITLE WITH A PROP</p>
+        <p className="h2" id='title'>REPLACE THIS TITLE WITH A PROP</p>
         <form onSubmit={handleSubmit}>
-          {/* <label>
+          <label>
             <input
+              id='assignment-input'
               className="form-control input-sm"
               type="text"
               placeholder={props.placeholder}
               value={value}
               onChange={handleChange}
             />
-          </label> */}
+          </label>
           <InputText
             placeholder={props.placeholder}
             value={value}
